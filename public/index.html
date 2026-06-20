@@ -10,6 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="form.css" />
+    <link rel="stylesheet" href="glass.css" />
+    <link rel="stylesheet" href="apple-glass.css" />
+    <link rel="stylesheet" href="liquid-refine.css" />
+    <link rel="stylesheet" href="brand-intensity.css" />
+    <link rel="stylesheet" href="logo-square.css" />
+    <link rel="stylesheet" href="logo-position.css" />
   </head>
   <body>
     <header class="site-header">
@@ -84,7 +90,7 @@
       <section id="contact" class="contact-band" aria-labelledby="contact-heading">
         <div class="section contact-inner">
           <div><p class="eyebrow light">Start a conversation</p><h2 id="contact-heading">Let's move the next load.</h2><p>Call dispatch for time-sensitive freight conversations or send a request with your lane details.</p></div>
-          <form class="quote-form" action="mailto:ufreightez@gmail.com" method="post" enctype="text/plain">
+          <form class="quote-form" id="quote-form">
             <label>Name<input name="name" autocomplete="name" required /></label>
             <label>Company<input name="company" autocomplete="organization" /></label>
             <label>Email<input name="email" type="email" autocomplete="email" required /></label>
@@ -92,6 +98,7 @@
             <label>Lane or load details<textarea name="message" rows="4" required></textarea></label>
             <label class="sms-consent"><input name="sms-consent" type="checkbox" required /><span>By checking this box, I consent to receive text messages related to delivery notifications, customer care, marketing, and fraud alerts from UFREIGHTEZ LLC. Reply <strong>STOP</strong> at any time to opt out. Message and data rates may apply. Message frequency may vary. Text <strong>HELP</strong> for assistance. See our <a href="privacy-policy.html">Privacy Policy</a> and <a href="sms-terms.html">SMS Terms and Conditions</a>.</span></label>
             <button class="btn primary" type="submit"><i data-lucide="send"></i>Send request</button>
+            <div class="form-success" id="form-success" role="status" aria-live="polite" hidden><i data-lucide="circle-check"></i><div><strong>Request received.</strong><span>Your details have not been sent anywhere.</span></div></div>
           </form>
         </div>
       </section>
