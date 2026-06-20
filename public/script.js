@@ -31,9 +31,8 @@ quoteForm?.addEventListener("submit", (event) => {
   event.preventDefault();
   if (!quoteForm.reportValidity()) return;
   formSuccess.hidden = false;
+  quoteForm.classList.add("is-submitted");
   formSuccess.classList.add("is-visible");
-  quoteForm.querySelector("button[type='submit']").disabled = true;
-  quoteForm.querySelector("button[type='submit']").innerHTML = "Request received";
 });
 
 const hero = document.querySelector(".hero");
